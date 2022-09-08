@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -S -march=i386  $CFILE
+gcc -S -fgnu-tm $CFILE
