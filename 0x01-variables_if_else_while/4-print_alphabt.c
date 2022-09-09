@@ -12,9 +12,9 @@ int main(void)
 	for (; c <= 'z'; c++)
 	{
 		if (c == 'e')
-			c++;
+			putchar(c++);
 		else if (c == 'q')
-			c++;
+			putchar(c++);
 		else
 			putchar(c);
 	}
