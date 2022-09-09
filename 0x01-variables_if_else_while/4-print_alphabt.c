@@ -12,7 +12,7 @@ int main(void)
 	for (; c <= 'z'; c++)
 	{
 		if (c == 'e')
-			continue`;
+			continue;
 		else if (c == 'q')
 			continue;
 		else
