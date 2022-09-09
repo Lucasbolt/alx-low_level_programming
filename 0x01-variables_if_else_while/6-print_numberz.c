@@ -6,7 +6,7 @@
  */
 int main(void)
 {
-	int c = 10;
+	int c = 1;
 
 	for (; c < 10; c++)
 		putchar((c % 10) + '0');
