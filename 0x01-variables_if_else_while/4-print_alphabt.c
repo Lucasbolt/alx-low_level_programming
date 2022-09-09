@@ -12,9 +12,15 @@ int main(void)
 	for (; c <= 'z'; c++)
 	{
 		if (c == 'e')
-			putchar(c++);
+		{
+			c++;
+			putchar(c);
+		}
 		else if (c == 'q')
-			putchar(c++);
+		{
+			c++;
+			putchar(c);
+		}
 		else
 			putchar(c);
 	}
