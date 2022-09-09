@@ -8,12 +8,13 @@ int main(void)
 {
 	int c = 0;
 
-	for (; c < 9; c++)
+	for (; c < 10; c++)
 	{
 		putchar((c % 10) + '0');
-		putchar(',');
-		putchar(' ');
+		if (c != 9)
+			putchar(',');
+			putchar(' ');
 	}
-	putchar((9 % 10) + '0');
+	putchar('\n');
 	return (0);
 }
