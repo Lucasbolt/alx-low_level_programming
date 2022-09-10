@@ -6,13 +6,14 @@
  */
 int main(void)
 {
-	int b = 0;
+	int b;
+	int c;
 
 	for (; b <= 8; b++)
 	{
-		int c = 0;
+		int c = 1;
 
-		for (; c <= 9; c++)
+		for (c = b + 1; c <= 9; c++)
 		{
 			putchar((b % 10) + '0');
 			putchar((c % 10) + '0');
@@ -22,7 +23,7 @@ int main(void)
 				putchar(' ');
 			}
 		}
-
+		c++;
 	}
 	putchar('\n');
 	return (0);
