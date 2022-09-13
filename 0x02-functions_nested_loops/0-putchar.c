@@ -7,6 +7,7 @@
 int main(void)
 {
 	char *myvar = "_putchar";
+
 	while (*myvar)
 		_putchar(*myvar++);
 	_putchar('\n');
