@@ -7,10 +7,11 @@
 void times_table(void)
 {
 	int count = 0;
-	
+
 	for (; count <= 9; count++)
 	{
 		int t[] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
+
 		int c = 0;
 
 		for (; c <= 9; c++)
@@ -34,6 +35,5 @@ void times_table(void)
 			}
 			printf("%d, ", n);
 		}
-
 	}
 }
