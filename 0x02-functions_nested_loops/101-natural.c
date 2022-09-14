@@ -3,6 +3,7 @@
 
 /**
  * main - prints the sum of numbers divisible by 3 and 5 betweem 0 and 1024
+ *Return: returns 0 on success
  */
 int main(void)
 {
