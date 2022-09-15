@@ -13,7 +13,6 @@ void print_diagonal(int n)
 
 	while (n > 0)
 	{
-		c++;
 		int a = c;
 
 		while (a > 0)
@@ -23,6 +22,7 @@ void print_diagonal(int n)
 		}
 		_putchar('\\');
 		_putchar('\n');
+		c++;
 		n--;
 	}
 }
