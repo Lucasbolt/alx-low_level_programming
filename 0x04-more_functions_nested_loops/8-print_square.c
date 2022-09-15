@@ -8,6 +8,9 @@ void print_square(int n)
 {
 	int m = n;
 
+	if (n <= 0)
+		_putchar('\n');
+
 	for (; n > 0; n--)
 	{
 		int k = m;
