@@ -8,6 +8,9 @@ void print_diagonal(int n)
 {
 	int c = 0;
 
+	if (n <= 0)
+		_putchar('\n');
+
 	while (n > 0)
 	{
 		c++;
