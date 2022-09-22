@@ -10,7 +10,8 @@ void reverse_array(int *a, int n)
 {
 	int b[98];
 	int count, len = n;
-	n = n -1;
+
+	n = n - 1;
 
 	for (count = 0; count < len; count++)
 		b[count] = a[n--];
