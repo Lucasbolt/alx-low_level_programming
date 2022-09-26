@@ -12,6 +12,9 @@ char *_strstr(char *haystack, char *needle)
 {
 	int index1;
 
+	if (*needle == 0)
+		return (haystack);
+
 	for (index1 = 0; haystack[index1]; index1++)
 	{
 		if (haystack[index1] == needle[0])
