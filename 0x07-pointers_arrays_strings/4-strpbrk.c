@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _strpbrk - function locates the first occurrence in the 
+ * _strpbrk - function locates the first occurrence in the
  *	string @s of any bytes in the string @accept
  * @s: main array
  * @accept: bytes to search for
