@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdio.h>
+#include <stdlib.>
 
 /**
  * free_grid - frees a 2D array from memory
