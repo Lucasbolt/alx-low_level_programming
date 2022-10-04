@@ -6,7 +6,7 @@
  * @grid: array to free up
  * @height: height of array
  */
-void free_grid(int **grid, height)
+void free_grid(int **grid, int height)
 {
 	int a;
 
