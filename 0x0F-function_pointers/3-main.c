@@ -17,7 +17,7 @@ int main(int __attribute__((__unused__)) argc, char **argv)
 
 	if (argc != 4)
 	{
-		puts("Error");
+		printf("Error\n");
 		exit(98);
 	}
 
@@ -29,13 +29,13 @@ int main(int __attribute__((__unused__)) argc, char **argv)
 
 	if (op == NULL || operand[1] != '\0')
 	{
-		puts("Error");
+		printf("Error\n");
 		exit(99);
 	}
 
 	if ((*operand == '/'  && b == 0) || (*operand == '%' && b == 0))
 	{
-		puts("Error");
+		printf("Error\n");
 		exit(100);
 	}
 
