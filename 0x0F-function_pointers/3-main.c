@@ -9,13 +9,13 @@
  * Return: 0 on success,
  *	any other num if error occurs
  */
-int main(int argc, char **argv)
+int main(int __attribute__((__unused__)) argc, char **argv)
 {
 	int answer, a, b;
 	char *operand;
 	int (*op)(int, int);
 
-	if (argc < 4 || argc > 4)
+	if (argc != 4)
 	{
 		puts("Error");
 		exit(98);
