@@ -33,7 +33,7 @@ int main(int __attribute__((__unused__)) argc, char **argv)
 		exit(100);
 	}
 
-	if (op == NULL)
+	if (op == NULL || operand[1] != '\0')
 	{
 		puts("Error");
 		exit(99);
