@@ -1,5 +1,4 @@
 #include "variadic_functions.h"
-#include <string.h>
 #include <stdio.h>
 
 void print_int(va_list args);
@@ -69,34 +68,31 @@ void print_int(va_list args)
  */
 void print_all(const char * const format, ...)
 {
-
-	size_t size = strlen(format);
 	unsigned int i = 0, u = 0;
+	char *sep = "";
 	va_list ap;
 
 	arg_types table[] = {
 		{"s", print_string},
 		{"c", print_char},
 		{"i", print_int},
-		{"f", print_float},
-		{"n", NULL}
+		{"f", print_float}
 	};
 
 	va_start(ap, format);
 
-	while (i < size)
+	while (format && (*(format + i)))
 	{
 		u = 0;
 
-		while (format[i] != *(table[u].name) && *(table[u].name) != 'n')
+		while (u < 4 && (*(format + i) != *(table[u].name)))
 			u++;
 
-		if (table[u].name != "n")
+		if (u < 4)
 		{
+			printf("%s", sep);
 			table[u].func(ap);
-
-			if (i < size - 1)
-				printf(", ");
+			sep = ", ";
 		}
 		i++;
 
