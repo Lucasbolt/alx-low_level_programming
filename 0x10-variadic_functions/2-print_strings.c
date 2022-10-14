@@ -10,7 +10,6 @@ void print_strings(const char *separator, const unsigned int n, ...)
 {
 	size_t count;
 	char *str;
-	int i;
 	va_list ap;
 
 	va_start(ap, n);
@@ -21,10 +20,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 		if (str == NULL)
 			printf("nil");
 		else
-		{
-			for (i = 0; str[i]; i++)
-				putchar(str[i]);
-		}
+			printf("%s", str);
 
 		if (separator != NULL && count < n - 1)
 			printf("%s", separator);
