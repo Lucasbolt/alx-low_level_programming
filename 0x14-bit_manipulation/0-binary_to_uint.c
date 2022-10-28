@@ -9,7 +9,7 @@
 unsigned int powt(unsigned int base, unsigned int expo)
 {
 	unsigned int ans = 1;
-	
+
 	if (expo == 0)
 		return (1);
 	while (expo > 0)
@@ -40,15 +40,15 @@ unsigned int binary_to_uint(const char *b)
 			return (0);
 		index++;
 	}
-    index--;
+	index--;
 
-	for(; index >= 0; index--)
+	for (; index >= 0; index--)
 	{
 		if (b[index] == '0')
 			dec += 0 * powt(2, power);
 		if (b[index] == '1')
 			dec += 1 * powt(2, power);
-		power+=1;
+		power += 1;
 	}
 
 	return (dec);
