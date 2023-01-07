@@ -33,4 +33,6 @@ int pop_listint(listint_t **head);
 listint_t *reverse_listint(listint_t **head);
 size_t print_listint_safe(const listint_t *head);
 size_t free_listint_safe(listint_t **h);
+listint_t *myrevnode(listint_t **head);
+listint_t *roughrev(listint_t **head);
 #endif
