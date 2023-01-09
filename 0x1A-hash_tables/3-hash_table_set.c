@@ -44,7 +44,9 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		ptr = ht->array[index];
 		while (ptr->next != NULL)
 			ptr = ptr->next;
+		ptr->next = new;
+		return (1);
 	}
-	ptr->next = new;
+	ht->array[index] = new
 	return (1);
 }
