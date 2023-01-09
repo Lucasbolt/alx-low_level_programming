@@ -3,7 +3,7 @@
 /**
  * hash_table_create - creates a hash table of the size @size.
  * @size: size of table to be initialized.
- * return: returns pointer to the created hash table.
+ * Return: returns pointer to the created hash table.
  */
 hash_table_t *hash_table_create(unsigned long int size)
 {
