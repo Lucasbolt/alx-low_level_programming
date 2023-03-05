@@ -1,0 +1,15 @@
+CC=gcc
+#CC is the compiler used
+
+NAME=school
+#NAME is the name of the executable program.
+
+SRC=main.c school.c
+#SRC contains the *.c source files.
+
+OBJ=$(SRC:.c=.o)
+#OBJ contains the object *.o files
+
+all: $(OBJ)
+	$(CC) $(OBJ) -o $(NAME)
+

@@ -1,0 +1,6 @@
+CC=gcc
+#CC is the compiler to be used.
+SRC=main.c school.c
+#SRC is the .c source files.
+all: $(SRC)
+	$(CC) $(SRC) -o school
